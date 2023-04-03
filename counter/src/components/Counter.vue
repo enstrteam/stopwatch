@@ -87,7 +87,7 @@ export default {
     start() {
       this.timer = setInterval(() => {
         this.elapsedTime += 1000
-      }, 100)
+      }, 1000)
       this.toggleButton()
     },
     pause() {
