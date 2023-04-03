@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./GothamPro.woff') format('woff');
+}
+
+$main-background: #353638;
+
+$counter-background: #696969;
+$counter-color: #9e9e9e;
+
+@mixin center() {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin rectangle() {
+  width: 225px;
+  height: 120px;
+  background-color: $counter-background;
+  color: $counter-color;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'GothamPro', sans-serif;
+  font-size: 22px;
+  line-height: 21.05px;
+  font-weight: 400;
+}
+
+button {
+  background-color: $counter-background;
+  border: none;
+  cursor: pointer;
+}
